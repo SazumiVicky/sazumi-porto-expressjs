@@ -1,0 +1,277 @@
+/*
+* dev: Viki
+* ig: @moe.sazumiviki
+* gh: github.com/sazumivicky
+* site: www.sazumiviki
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #03001d;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 60px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+section {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.photo-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.photo-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.photo-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #03001d;
+    padding: 5px 0;
+    backdrop-filter: blur(5px);
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo-item:hover .photo-caption {
+    transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+    .photo-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .photo-grid img {
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+}
+
+.profile {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.profile img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 100px;
+    border: 1px solid #ffffff36;
+    padding: 10px;
+    background-color: #03001d;
+    box-sizing: border-box;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-name {
+    font-size: 48px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    transform: rotate(-3deg);
+}
+
+.profile p {
+    color: #ccc;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.new-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.new-text, .blog-text {
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.new-text:hover, .blog-text:hover {
+    color: #007acc;
+}
+
+.new-text::after, .blog-text::after {
+    content: ' >';
+    font-weight: normal;
+    color: #333;
+}
+
+.github-btn {
+    background-color: #8c52ff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.github-btn:hover {
+    background-color: #a673ff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    border-radius: 0;
+    width: 100%;
+    z-index: 5000;
+    backdrop-filter: blur(10px);
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+/*    border-bottom: 1px solid #cccccc4d; */
+    padding: 6px;
+    background-color: #ffffff0a;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.header img {
+    height: 50px;
+    border-radius: 100px;
+}
+
+.header span {
+    font-size: 15px;
+}
+
+.quick-center {
+    display: flex;
+    align-items: center;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.quick-center i {
+    margin-right: 10px;
+}
+
+.nav-item i {
+    font-size: 16px;
+    margin-bottom: 3px; 
+}
+
+.nav-item span {
+    font-size: 12px;
+}
+
+.about-description, .about-name, .about-role {
+    color: white;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.com-style {
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 1px white;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #cccccc4d;
+    margin: 35px 0;
+}
+
+.teks-sazumiviki {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.stats-row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.stat {
+    text-align: center;
+    flex: 1;
+}
+
+.number {
+    font-size: 2em;
+    font-weight: bold;
+    -webkit-text-stroke: 1px white;
+    color: rgba(255, 255, 255, 0);
+}
+
+.label {
+    font-size: 1em;
+    color: #ffffff;
+}
