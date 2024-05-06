@@ -275,3 +275,8 @@ hr {
     font-size: 1em;
     color: #ffffff;
 }
+
+.section-background {
+    background: radial-gradient(45rem 50rem at top, #e0e7ff12, #03001d);
+    opacity: 0.5;
+}
