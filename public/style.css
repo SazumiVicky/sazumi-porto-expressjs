@@ -276,7 +276,7 @@ hr {
     color: #ffffff;
 }
 
-#about, #photo {
+#about, #photo, #skills, #projects {
     background: radial-gradient(45rem 50rem at top, #e0e7ff12, #03001d);
 }
 
