@@ -342,5 +342,13 @@ hr {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 49; /* Pastikan z-index ini di bawah popup tetapi di atas konten lain */
+    z-index: 49;
+}
+
+#about, #skills, #photo, #projects {
+    background-clip: padding-box;
+}
+
+#about, #skills, #photo, #projects {
+    border-radius: 10px;
 }
