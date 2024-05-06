@@ -56,8 +56,8 @@ section {
     width: 100%;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #03001d;
+    background-color: rgb(29 0 0 / 51%);
+    color: #fff;
     padding: 5px 0;
     backdrop-filter: blur(5px);
     transform: translateY(100%);
