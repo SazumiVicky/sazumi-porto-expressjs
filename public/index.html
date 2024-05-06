@@ -31,6 +31,26 @@ site: <a href="https://sazumi.moe">sazumi.moe</a>
             </div>
         </div>
     </header>
+    <div id="info-popup" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed inset-0 z-50 w-full h-full flex items-center justify-center">
+        <div class="blur-effect"></div>
+        <div class="relative p-4 w-full max-w-lg z-50">
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-800 p-8">
+            <div class="mb-4 text-sm font-light text-gray-500 dark:text-gray-400">
+                <h3 class="mb-3 text-2xl font-bold text-gray-900 dark:text-white">Privacy info</h3>
+                <p>
+                    The backup created with this export functionality may contain some sensitive data. We suggest you to save this archive in a secured location.
+                </p>
+            </div>
+            <div class="flex justify-between items-center pt-0 space-y-4 sm:space-y-0">
+                <div class="flex space-x-4">
+                    <button id="close-modal" type="button" class="py-2 px-4 text-sm font-medium text-gray-500 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-primary-300 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Cancel</button>
+                    <button id="confirm-button" type="button" class="py-2 px-4 text-sm font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Confirm</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
     <div class="navbar" style="position: fixed; bottom: 0; width: 100%; z-index: 5000; background-color: #0000001a; backdrop-filter: blur(10px);" data-aos="fade-up">
         <a href="#" class="nav-item" data-aos="fade-up" data-aos-delay="50">
             <i class="fa fa-home"></i>
@@ -147,10 +167,6 @@ site: <a href="https://sazumi.moe">sazumi.moe</a>
                         <span class="photo-caption">Ireena Ritsu</span>
                     </div>
                     <div class="photo-item">
-                        <img src="https://i.pinimg.com/564x/f4/d2/60/f4d2608779179bb56179cad9f6241b5b.jpg" alt="Favorite Photo" data-aos="fade-in">
-                        <span class="photo-caption">Ireena Ritsu</span>
-                    </div>
-                    <div class="photo-item">
                         <img src="https://i.pinimg.com/564x/97/18/cf/9718cf89d97d3bd8db95527c9b49e1e9.jpg" alt="Favorite Photo" data-aos="fade-in">
                         <span class="photo-caption">Ireena Ritsu</span>
                     </div>
@@ -209,13 +225,5 @@ site: <a href="https://sazumi.moe">sazumi.moe</a>
         </main>
     </div>
     <script src="index.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true,
-            delay: 100,
-            anchorPlacement: 'top-bottom',
-        });
-    </script>
 </body>
 </html>

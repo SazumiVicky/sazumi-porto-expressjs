@@ -334,3 +334,13 @@ hr {
 .white-filter {
     filter: brightness(0) invert(1);
 }
+
+.blur-effect {
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 49; /* Pastikan z-index ini di bawah popup tetapi di atas konten lain */
+}

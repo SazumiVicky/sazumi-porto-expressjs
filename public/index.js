@@ -5,32 +5,25 @@
 * site: www.sazumiviki
 */
 
-document.addEventListener('DOMContentLoaded', function() {
-    const skillBars = document.querySelectorAll('.skill-bar');
-    skillBars.forEach(bar => {
-        let skillLevel = bar.getAttribute('data-skill');
-        bar.style.width = '0%';
-        setTimeout(() => {
-            bar.style.width = skillLevel + '%';
-        }, 100);
-    });
-
-    const counters = document.querySelectorAll('.number');
-    counters.forEach(counter => {
-        counter.innerText = '0';
-        const updateCounter = () => {
-            const target = +counter.getAttribute('data-target');
-            const c = +counter.innerText;
-
-            const increment = target / 200;
-
-            if (c < target) {
-                counter.innerText = `${Math.ceil(c + increment)}`;
-                setTimeout(updateCounter, 10);
-            } else {
-                counter.innerText = target;
-            }
-        };
-        updateCounter();
-    });
+AOS.init({
+    duration: 1000,
+    once: true,
+    delay: 100,
+    anchorPlacement: 'top-bottom',
 });
+window.onload = function() {
+    if (!sessionStorage.getItem('popupShown')) {
+        document.getElementById('info-popup').classList.remove('hidden');
+        document.querySelector('body').classList.add('blur-background');
+        sessionStorage.setItem('popupShown', 'true');
+    }
+
+    document.getElementById('close-modal').addEventListener('click', function() {
+        document.getElementById('info-popup').classList.add('hidden');
+        document.querySelector('body').classList.remove('blur-effect');
+    });
+    document.getElementById('confirm-button').addEventListener('click', function() {
+        document.getElementById('info-popup').classList.add('hidden');
+        document.querySelector('body').classList.remove('blur-effect');
+    });
+};
