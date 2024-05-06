@@ -285,7 +285,7 @@ hr {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: transparent; /* Fallback: just in case the text-fill-color doesn't work */
+    color: transparent;
 }
 
 @keyframes gradient-animation {
