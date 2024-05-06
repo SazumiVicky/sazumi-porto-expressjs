@@ -306,6 +306,31 @@ hr {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: transparent; /* Fallback: just in case the text-fill-color doesn't work */
+    color: transparent;
     animation: gradient-animation 10s ease infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.scrolling-wrapper {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.scrolling-content {
+    display: flex;
+    animation: scroll 10s linear infinite;
+    will-change: transform;
+}
+
+.white-filter {
+    filter: brightness(0) invert(1);
 }
