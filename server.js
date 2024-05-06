@@ -16,6 +16,10 @@ app.use((req, res, next) => {
 
 app.use(express.static('public'));
 
+app.use((req, res) => {
+  res.status(404).sendFile('404.html', { root: 'public' });
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
