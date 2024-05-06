@@ -351,4 +351,5 @@ hr {
 
 #about, #skills, #photo, #projects {
     border-radius: 10px;
+    margin: 10px;
 }
