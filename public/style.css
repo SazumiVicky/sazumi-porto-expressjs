@@ -276,10 +276,6 @@ hr {
     color: #ffffff;
 }
 
-#about, #photo, #skills, #projects {
-    background: radial-gradient(45rem 50rem at top, #e0e7ff12, #03001d);
-}
-
 .text-gradient {
     background: linear-gradient(45deg, #ec77ab, #e100ff);
     -webkit-background-clip: text;
@@ -346,12 +342,10 @@ hr {
 }
 
 #about, #skills, #photo, #projects {
-    background-clip: padding-box;
-}
-
-#about, #skills, #photo, #projects {
     border-radius: 10px;
     margin: 10px;
+    background-clip: padding-box;
+    background: radial-gradient(45rem 50rem at top, #e0e7ff12, #03001d);
 }
 
 .skill-item {
@@ -367,8 +361,8 @@ hr {
 }
 
 #footer {
-    background-clip: padding-box;
     border-radius: 10px;
-    background: radial-gradient(45rem 50rem at top, #e0e7ff12, #03001d);
     margin: 10px;
+    background-clip: padding-box;
+    background: radial-gradient(45rem 50rem at top, #e0e7ff12, #03001d);
 }
