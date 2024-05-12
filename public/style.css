@@ -365,3 +365,10 @@ hr {
 .skill-item p {
     font-size: 16px;
 }
+
+#footer {
+    background-clip: padding-box;
+    border-radius: 10px;
+    background: radial-gradient(45rem 50rem at top, #e0e7ff12, #03001d);
+    margin: 10px;
+}
