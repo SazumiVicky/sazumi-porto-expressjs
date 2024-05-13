@@ -1,3 +1,8 @@
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="https://cdn.sazumi.moe/file/kxy2c6.png" alt="icon-sazumiviki"></a>
+</p>
+
 ## Description
 This repository contains the source code for my personal portfolio website. The website showcases my projects, skills, and professional experience.
 
