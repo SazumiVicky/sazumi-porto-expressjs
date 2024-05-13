@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="https://cdn.sazumi.moe/file/kxy2c6.png" alt="icon-sazumiviki"></a>
+ <img src="https://cdn.sazumi.moe/file/kxy2c6.png" alt="icon-sazumiviki"></a>
 </p>
 
 ## Description
