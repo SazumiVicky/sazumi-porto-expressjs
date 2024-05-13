@@ -47,7 +47,7 @@ To build and run the website using Docker, follow these steps:
 
 2. **Run the Docker container**
    ```bash
-   docker run -p 3000:3000 portfolio-website
+   docker run -p 3000:3000 sazumi-porto-expressjs
    ```
 
    Access the website at `http://localhost:3000`.
