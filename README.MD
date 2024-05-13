@@ -24,7 +24,7 @@ This repository contains the source code for my personal portfolio website. The 
 1. **Clone the repository**
    ```bash
    git clone https://github.com/sazumivicky/sazumi-porto-expressjs.git
-   cd portfolio-website
+   cd sazumi-porto-expressjs
    ```
 
 2. **Install dependencies**
